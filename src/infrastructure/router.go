@@ -8,9 +8,9 @@ import (
 )
 
 
-func Init(e *echo.Echo){
+func Init(e *echo.Echo,conn string){
 
-    userController := controllers.NewUserController(NewSqlHandler())
+    userController := controllers.NewUserController(NewSqlHandler(conn))
     e.GET("/", func(c echo.Context) error {
         return c.String(http.StatusOK,"Hello World")
     })

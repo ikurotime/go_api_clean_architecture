@@ -11,8 +11,7 @@ type SqlHandler struct {
     db *gorm.DB
 }
 
-func NewSqlHandler() database.SqlHandler{
-    conn := "root:password@tcp(127.0.0.1:3306)/go_sample?charset=utf8mb4&parseTime=True&loc=Local"
+func NewSqlHandler(conn string) database.SqlHandler{
     db, err := gorm.Open(mysql.Open(conn), &gorm.Config{})
 
     if err != nil {
