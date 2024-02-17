@@ -1,11 +1,11 @@
 package controllers
 
 import (
-	"ikurotime/go_api_hexagonal_architecture/src/domain"
-	"ikurotime/go_api_hexagonal_architecture/src/interfaces/database"
-	"ikurotime/go_api_hexagonal_architecture/src/usecase"
+	"ikurotime/go_api_clean_architecture/src/domain"
+	"ikurotime/go_api_clean_architecture/src/interfaces/database"
+	"ikurotime/go_api_clean_architecture/src/usecase"
 
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 )
 
 
@@ -30,7 +30,6 @@ func (controller *UserController) Create(c echo.Context){
     controller.Interactor.Add(user)
     createdUsers := controller.Interactor.GetInfo()
     c.JSON(201, createdUsers)
-    return
 }
 func (controller *UserController) GetUser() []domain.User{
     return controller.Interactor.GetInfo()

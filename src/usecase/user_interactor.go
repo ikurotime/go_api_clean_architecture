@@ -1,6 +1,6 @@
 package usecase
 
-import "ikurotime/go_api_hexagonal_architecture/src/domain"
+import "ikurotime/go_api_clean_architecture/src/domain"
 
 type UserInteractor struct { 
     UserRepository UserRepository

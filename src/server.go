@@ -1,11 +1,11 @@
 package main
 
 import (
-	"ikurotime/go_api_hexagonal_architecture/src/domain"
-	"ikurotime/go_api_hexagonal_architecture/src/infrastructure"
+	"ikurotime/go_api_clean_architecture/src/domain"
+	"ikurotime/go_api_clean_architecture/src/infrastructure"
 	"log"
 
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )

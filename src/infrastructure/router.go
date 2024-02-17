@@ -1,10 +1,10 @@
 package infrastructure
 
 import (
-	controllers "ikurotime/go_api_hexagonal_architecture/src/interfaces/api"
+	controllers "ikurotime/go_api_clean_architecture/src/interfaces/api"
 	"net/http"
 
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 )
 
 

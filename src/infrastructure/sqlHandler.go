@@ -1,9 +1,10 @@
 package infrastructure
 
 import (
+	"ikurotime/go_api_clean_architecture/src/interfaces/database"
+
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
-    "ikurotime/go_api_hexagonal_architecture/src/interfaces/database"
 )
 
 type SqlHandler struct {
